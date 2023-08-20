@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Amigos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Handjet:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Imgs/Icono.png">
+    <script src="script.js" defer></script>
+</head>
+<body class="fondo">
+    <!-- Mi Barra del menú profe -->
+    <div class="menu">
+        <div>
+            <h2>¿Quieres entender un poco mas de la dometicacion en ARK Survival Evolved? </h2>
+            <a href="./index.html">Introduccion en la domestiacaion en ark</a>
+        </div>
+        <div>
+            <h2>¿Quieres saber los métodos de tameo de algunos dinosaurios de ARK?</h2>
+            <a href="./pagina2.html">Tabla de Tameo de los Dinosarios</a>
+        </div>
+        <div>
+            <h2>¿Quieres conocer las diferentes etapas del proceso de domesticación en ARK?</h2>
+            <a href="./pagina3.html">Etapas de Domesticación</a>
+        </div>
+        <div>
+            <h2>¿Quieres encontrar material de interés acerca de los tipos de tameo en ARK?</h2>
+            <a href="./pagina4.html">Material de Interes de ARK</a>
+        </div>
+        <div>
+            <h2>¿Quieres encontrar mas amigos amantes de los dinosaurios?</h2>
+            <a href="./pagina5.html">Amigos en ARK</a>
+        </div>
+    </div>
+    <div>
+        <h1>Amigos y sus dinosaurios agregados</h1>
+        <h2>Agregar datos de tu Amigo</h2>
+        <form id="friendForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required><br>
+            <label for="imageURL">URL de la Imagen:</label>
+            <input type="url" id="imageURL" required><br>
+            <label for="dinosaurList" id="dinosaurListLabel" class="label">Selecciona los dinosaurios tameados por tu amigo:</label>
+            <div id="dinosaurList" class="margencita2 columnas2">
+                <input type="checkbox" id="Tyrannosaurus" value="Tyrannosaurus">
+                <label for="Tyrannosaurus">Tyrannosaurus</label><br>
+                <input type="checkbox" id="Velociraptor" value="Velociraptor">
+                <label for="Velociraptor">Velociraptor</label><br>
+                <input type="checkbox" id="Stegosaurus" value="Stegosaurus">
+                <label for="Stegosaurus">Stegosaurus</label><br>
+                <input type="checkbox" id="Triceratops" value="Triceratops">
+                <label for="Triceratops">Triceratops</label><br>
+                <input type="checkbox" id="Brachiosaurus" value="Brachiosaurus">
+                <label for="Brachiosaurus">Brachiosaurus</label><br>
+                <input type="checkbox" id="Allosaurus" value="Allosaurus">
+                <label for="Allosaurus">Allosaurus</label><br>
+                <input type="checkbox" id="Ankylosaurus" value="Ankylosaurus">
+                <label for="Ankylosaurus">Ankylosaurus</label><br>
+                <input type="checkbox" id="Pteranodon" value="Pteranodon">
+                <label for="Pteranodon">Pteranodon</label><br>
+                <input type="checkbox" id="Spinosaurus" value="Spinosaurus">
+                <label for="Spinosaurus">Spinosaurus</label><br>
+                <input type="checkbox" id="Apatosaurus" value="Apatosaurus">
+                <label for="Apatosaurus">Apatosaurus</label><br>
+                <input type="checkbox" id="Archaeopteryx" value="Archaeopteryx">
+                <label for="Archaeopteryx">Archaeopteryx</label><br>
+                <input type="checkbox" id="Carnotaurus" value="Carnotaurus">
+                <label for="Carnotaurus">Carnotaurus</label><br>
+                <input type="checkbox" id="Dilophosaurus" value="Dilophosaurus">
+                <label for="Dilophosaurus">Dilophosaurus</label><br>
+                <input type="checkbox" id="Gallimimus" value="Gallimimus">
+                <label for="Gallimimus">Gallimimus</label><br>
+                <input type="checkbox" id="Megalosaurus" value="Megalosaurus">
+                <label for="Megalosaurus">Megalosaurus</label><br>
+                <input type="checkbox" id="Parasaurolophus" value="Parasaurolophus">
+                <label for="Parasaurolophus">Parasaurolophus</label><br>
+                <input type="checkbox" id="Protoceratops" value="Protoceratops">
+                <label for="Protoceratops">Protoceratops</label><br>
+                <input type="checkbox" id="Quetzalcoatlus" value="Quetzalcoatlus">
+                <label for="Quetzalcoatlus">Quetzalcoatlus</label><br>
+                <input type="checkbox" id="Sauroposeidon" value="Sauroposeidon">
+                <label for="Sauroposeidon">Sauroposeidon</label><br>
+                <input type="checkbox" id="Styracosaurus" value="Styracosaurus">
+                <label for="Styracosaurus">Styracosaurus</label><br>
+                <input type="checkbox" id="Therizinosaurus" value="Therizinosaurus">
+                <label for="Therizinosaurus">Therizinosaurus</label><br>
+                <input type="checkbox" id="Troodon" value="Troodon">
+                <label for="Troodon">Troodon</label><br>
+                <input type="checkbox" id="Utahraptor" value="Utahraptor">
+                <label for="Utahraptor">Utahraptor</label><br>
+                <input type="checkbox" id="Yutyrannus" value="Yutyrannus">
+                <label for="Yutyrannus">Yutyrannus</label><br>
+                <input type="checkbox" id="Zuniceratops" value="Zuniceratops">
+                <label for="Zuniceratops">Zuniceratops</label><br>
+                <input type="checkbox" id="Brontosaurus" value="Brontosaurus">
+                <label for="Brontosaurus">Brontosaurus</label><br>
+                <input type="checkbox" id="Carcharodontosaurus" value="Carcharodontosaurus">
+                <label for="Carcharodontosaurus">Carcharodontosaurus</label><br>
+                <input type="checkbox" id="Compsognathus" value="Compsognathus">
+                <label for="Compsognathus">Compsognathus</label><br>
+                <input type="checkbox" id="Diplodocus" value="Diplodocus">
+                <label for="Diplodocus">Diplodocus</label><br>
+                <input type="checkbox" id="Giganotosaurus" value="Giganotosaurus">
+                <label for="Giganotosaurus">Giganotosaurus</label><br>
+                <input type="checkbox" id="Iguanodon" value="Iguanodon">
+                <label for="Iguanodon">Iguanodon</label><br>
+                <input type="checkbox" id="Mamenchisaurus" value="Mamenchisaurus">
+                <label for="Mamenchisaurus">Mamenchisaurus</label><br>
+                <input type="checkbox" id="Nodosaurus" value="Nodosaurus">
+                <label for="Nodosaurus">Nodosaurus</label><br>
+                <input type="checkbox" id="Pachycephalosaurus" value="Pachycephalosaurus">
+                <label for="Pachycephalosaurus">Pachycephalosaurus</label><br>
+                <input type="checkbox" id="Plateosaurus" value="Plateosaurus">
+                <label for="Plateosaurus">Plateosaurus</label><br>
+                <input type="checkbox" id="Suchomimus" value="Suchomimus">
+                <label for="Suchomimus">Suchomimus</label><br>
+                <input type="checkbox" id="Tapejara" value="Tapejara">
+                <label for="Tapejara">Tapejara</label><br>
+                <input type="checkbox" id="Torosaurus" value="Torosaurus">
+                <label for="Torosaurus">Torosaurus</label><br>
+                <input type="checkbox" id="Titaosaurus" value="Titaosaurus">
+                <label for="Tsintaosaurus">Titaosaurus</label><br>
+                <input type="checkbox" id="Tuojiangosaurus" value="Tuojiangosaurus">
+                <label for="Tuojiangosaurus">Tuojiangosaurus</label><br>
+                <input type="checkbox" id="Yandusaurus" value="Yandusaurus">
+                <label for="Yandusaurus">Yandusaurus</label><br>
+            </div>
+            <button type="button" id="addFriendBtn">Agregar Amigo</button>
+        </form>
+    </div>
+    
+    <div>
+        <!-- Tabla para mostrar a los amigos registrados por el usuario -->
+        <h2>Amigos Registrados</h2>
+        <table class="margencita" id="friendsTable">
+            <tr>
+                <th>Username</th>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Dino-Mascota</th>
+            </tr>
+        </table>
+        <!-- Div oculto para mostrar luego a la lista de dinosaurios segun yo lo requiera profe -->
+        <div id="dinosaursListDiv" style="display: none;"></div>
+    </div>
+
+    <footer>
+        <div class="footercontenido">
+            <p class="footer1">Consejeando en ARk</p>
+            <p class="footer2">Creado por Miguel Angel Uribe Villada. 2023</p>
+            <p class="footer3">Correo electrónico: <a href="mailto:miguelangeluribevillada2003@gmail.com">miguelangeluribevillada2003@gmail.com</a></p>
+            <p class="footer4">Facebook   |   Instagram   |   Youtube   |   Twitter   |   TikTok</p>
+        </div>
+    </footer>
+</body>
+</html>
